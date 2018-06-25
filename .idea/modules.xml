@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ThemePark.iml" filepath="$PROJECT_DIR$/ThemePark.iml" />
+      <module fileurl="file://$PROJECT_DIR$/w7d1_Interfaces.iml" filepath="$PROJECT_DIR$/w7d1_Interfaces.iml" />
+    </modules>
+  </component>
+</project>
