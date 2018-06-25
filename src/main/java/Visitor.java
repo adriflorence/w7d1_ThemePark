@@ -25,4 +25,15 @@ public class Visitor {
     public void takeMoney(double money) {
         this.money -= money;
     }
+
+    public boolean canAfford(Visitor visitor, Attraction attraction) {
+        return (money >= attraction.priceFor(visitor));
+    }
+
+    public void rate(IReviewed place, int ratingGiven) {
+        double currentRating = place.getRating();
+        // round to the nearest .5
+        double newRating = (((currentRating + ratingGiven) / place.getNumberOfVisitors()) * 2) / 2.0;
+        place.setRating(newRating);
+    }
 }

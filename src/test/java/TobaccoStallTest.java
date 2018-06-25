@@ -11,8 +11,8 @@ public class TobaccoStallTest {
     @Before
     public void setup() {
         visitor1 = new Visitor(11, 150, 10);
-        visitor2 = new Visitor(12, 123, 10);
-        visitor3 = new Visitor(21, 210, 20);
+        visitor2 = new Visitor(20, 172, 6.50);
+        visitor3 = new Visitor(18, 210, 20);
         tobacco = new TobaccoStall();
     }
 
@@ -20,6 +20,11 @@ public class TobaccoStallTest {
     public void underAgeCannotBuy(){
         assertEquals(false, tobacco.isAllowedTo(visitor1));
         assertEquals(true, tobacco.isAllowedTo(visitor3));
+    }
+
+    @Test
+    public void customerCannotAfford(){
+        assertEquals(false, tobacco.isAllowedTo(visitor1));
     }
 
 }

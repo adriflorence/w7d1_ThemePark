@@ -22,4 +22,12 @@ public class PlaygroundTest {
         assertEquals(false, playground.isAllowedTo(visitor3));
     }
 
+    @Test
+    public void canBeVisited(){
+        playground.visit(visitor1, playground);
+        playground.visit(visitor2, playground);
+        playground.visit(visitor3, playground); // too old
+        assertEquals(2 , playground.getNumberOfVisitors());
+    }
+
 }

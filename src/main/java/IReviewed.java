@@ -1,5 +1,7 @@
 public interface IReviewed {
 
-    int getRating();
+    double getRating();
     String getName();
+    int getNumberOfVisitors();
+    void setRating(double rating);
 }
