@@ -1,6 +1,6 @@
 public class Playground extends Attraction implements ISecurity{
 
-    public Playground(String name, int rating) {
+    public Playground(String name, double rating) {
         super(name, rating);
     }
 

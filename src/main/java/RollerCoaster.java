@@ -1,7 +1,7 @@
 public class RollerCoaster extends Attraction implements ISecurity, ITicketed {
 
 
-    public RollerCoaster(String name, int rating) {
+    public RollerCoaster(String name, double rating) {
         super(name, rating);
     }
 

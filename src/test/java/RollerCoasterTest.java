@@ -32,7 +32,7 @@ public class RollerCoasterTest {
 
     @Test
     public void hasRating(){
-        assertEquals(8, rollercoaster.getRating());
+        assertEquals(8, rollercoaster.getRating(), 3);
     }
 
     @Test
@@ -46,6 +46,7 @@ public class RollerCoasterTest {
         assertEquals(3.20, visitor3.getMoney(), 3); // pays double
         assertEquals(4, visitor4.getMoney(), 3); // cannot afford
 
+        // tests for number of visitors:
         assertEquals(1 , rollercoaster.getNumberOfVisitors());
     }
 
@@ -62,5 +63,6 @@ public class RollerCoasterTest {
         visitor3.rate(rollercoaster, 5);
         assertEquals(6.5, rollercoaster.getRating(), 3);
     }
+
 
 }

@@ -16,6 +16,10 @@ public abstract class ThemePark {
         allReviewed.add(place);
     }
 
+    public int getNumberOfPlaces(){
+        return allReviewed.size();
+    }
+
     public ArrayList<IReviewed> getAllReviewed() {
         return allReviewed;
     }
@@ -23,4 +27,15 @@ public abstract class ThemePark {
 //    public ArrayList<ITicketed> getAllAllowedFor(Visitor visitor) {
 //
 //    }
+
+    public String allRatings(){
+        String ratingsForAllPlaces = "";
+        for (IReviewed place : allReviewed) {
+            ratingsForAllPlaces += place.getName() + " : " + place.getRating() + ", ";
+        }
+
+        // removes trailing comma
+        ratingsForAllPlaces = ratingsForAllPlaces.replaceAll(", $", "");
+        return ratingsForAllPlaces;
+    }
 }

@@ -13,7 +13,7 @@ public class TobaccoStallTest {
         visitor1 = new Visitor(11, 150, 10);
         visitor2 = new Visitor(20, 172, 6.50);
         visitor3 = new Visitor(18, 210, 20);
-        tobacco = new TobaccoStall();
+        tobacco = new TobaccoStall("'Stayaway' Cigarette Shop", "Joe","Lot 49", 3);
     }
 
     @Test
