@@ -26,7 +26,7 @@ public class Visitor {
         this.money -= money;
     }
 
-    public boolean canAfford(Visitor visitor, Attraction attraction) {
+    public boolean canAfford(Visitor visitor, ITicketed attraction) {
         return (money >= attraction.priceFor(visitor));
     }
 
